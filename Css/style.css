@@ -412,6 +412,8 @@ body {
 }
 #contact textarea{
     background-color: var(--primary-color);
+     width: 25rem;
+    height: 2.5rem;
 }
 #contact::placeholder{
     font-family: 'Roboto Slab',sans-serif;
