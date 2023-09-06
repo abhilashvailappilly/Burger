@@ -454,11 +454,17 @@ body {
     #contact input{
         width:20rem
     }
+     #contact textarea{
+        width:20rem
+    }
     
 }
 @media screen and (max-width:389px) {
     #contact input{
         width:15rem
+    }
+     #contact textarea{
+        width:20rem
     }
     
 }
