@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger King</title>
+
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="shortcut icon" type="image" href="./images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ------------------------Bootstrap link----------------------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- ------------------------Google Font  link----------------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Roboto+Slab:wght@500&display=swap"
+        rel="stylesheet">
+    <!-- ------------------------Google Font  link----------------------------- -->
+
+    <!-- ------------------------Custom Java script link----------------------------- -->
+     <script src="Js/index.js"></script>
+
+
+    <!-- ------------------------Email link----------------------------- -->
+
+            <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+            </script>
+            <script type="text/javascript">
+            (function(){
+            emailjs.init("ye5UTcGBBuKK1Nl8t");
+            })();
+        </script>
+
+</head>
+
+<body>
+    <div class="home-section">
+        <nav class="navbar navbar-expand-lg " id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" id="logo"><img src="/Images/logo.png" alt="" width="30px">BUR
+                    <span>GER</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active " href="#home">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#burger">Burger</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Other
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+                                style="background-color:#ffc800;">
+                                <li><a class="dropdown-item" href="#">Pizza</a></li>
+                                <li><a class="dropdown-item" href="#">Fries</a></li>
+                                <li><a class="dropdown-item" href="#">Fried Chicken</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">About Us</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#contact-container">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <div class="icons ">
+                            <i class="fa-regular fa-user "></i>
+                            <!-- <i class="fa-soild fa-cart-shopping"></i> -->
+                            <i class="fa-solid fa-shopping-cart"></i>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- home content -->
+        <section id ="home" class="home d-flex flex-wrap justify-content-center align-items-center ">
+            <div id="content" class="content ">
+                <h1 class="fw-bold">Super Delicious
+                    <br><span>Burger</span>
+                </h1>
+                <p>Lorem aut nam ducimus rem recusandae, laborum non a.</p>
+                <button id="btn" class="rounded-pill">Order Now<span></span></button>
+            </div>
+            <div class="img" id="home-content-image">
+                <img src="Images/burger.png" alt="">
+            </div>
+            
+        </section>
+        <!-- home content -->
+        <button id="sticky-btn" onclick="scrolltotop()" class="float-end rounded-pill " style="width: 40px; height: 60px;"><i class="fa-solid fa-circle-up "></i></button>
+    </div>
+    <!-- home Section -->
+
+    <!-- Top icon -->
+    <div class="container" id="top-icons">
+        <h1>OFFERS</h1>
+            <div class="row d-flex col-lg-3 col-md-3 col-sm-3 col-xs-3 flex-nowrap " id="top-icon-row">
+                 <div class="  py-3 py-md-0">
+                    <i><img src="Images/offer1.png"  alt=""></i>
+                    <h3 class="ms-2">Burger 50% off</h3>
+                </div>
+                <div class="  py-3 py-md-0">
+                    <i><img src="Images/offer2.png"   alt=""></i>
+                    <h3 class="ms-2">Free Delivery</h3>
+                </div>
+                <div class="   py-3 py-md-0">
+                    <i><img src="Images/offer3.png"   alt=""></i>
+                    <h3 class="ms-2">Burger free fries</h3>
+                </div>
+                <div class="   py-3 py-md-0">
+                    <i><img src="Images/offer4.png"   alt=""></i>
+                    <h3 class="ms-2">Burger with free cold drinks</h3>
+                </div>
+            </div>
+    </div>
+    <!-- Top icon -->
+
+    <!-- Cards -->
+    <div class="container">
+        <div class="row" style="margin-top: 30px;">
+            <div class="col-md-6  py-3 py-md-0">
+                <div class="card">
+                    <img src="/Images/cards1.png" alt="">
+                    <div class="card-img-overlay"><!--overlay is used to display content over an image-->
+                        <h3>HamBurger</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <button id="rn">Order No</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6  py-3 py-md-0">
+                <div class="card">
+                    <img src="/Images/cards2.png" alt="">
+                    <div class="card-img-overlay"><!--overlay is used to display content over an image-->
+                        <h3>Pizza</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <button id="rn">Order No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="row" style="margin-top: 30px;">
+                <div class="col-md-4  py-3 py-md-0">
+                    <div class="card">
+                        <img src="/Images/cards3.png" alt="">
+                        <div class="card-img-overlay"><!--overlay is used to display content over an image-->
+                            <h3>Italian pizza</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <button id="rn">Order No</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 lg-4 xl-2col-sm-12 py-3 py-md-0">
+                    <div class="card">
+                        <img src="/Images/cards4.png" alt="">
+                        <div class="card-img-overlay"><!--overlay is used to display content over an image-->
+                            <h3>Fried Chicken</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <button id="rn" class="rounded-pill">Order No</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-md-4 lg-4 xl-2col-x py-3 py-md-0">
+                    <div class="card">
+                        <img src="/Images/cards5.png" alt="">
+                        <div class="card-img-overlay"><!--overlay is used to display content over an image-->
+                            <h3>Burger</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <button id="rn">Order No</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Cards -->
+
+
+        <!-- new cards  -->
+        <div class="container" id="burger">
+            <h1>Delicious Burger</h1>
+            <div class="row d-flex flex-bas flex-wrap justify-content-evenly">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="Images/b1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title text-black">Burger</h3>
+                        <p class="card-text text-black-50">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                       <h5 class="text-black " >400<span class="float-end text-black"><i class="fa-solid fa-basket-shopping "></i></span></h5>  
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="Images/b2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title text-black">Burger 1</h3>
+                        <p class="card-text text-black-50">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                       <h5 class="text-black " >400<span class="float-end text-black"><i class="fa-solid fa-basket-shopping "></i></span></h5>  
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="Images/b3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title text-black">Burger 2</h3>
+                        <p class="card-text text-black-50">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                       <h5 class="text-black " >500<span class="float-end text-black"><i class="fa-solid fa-basket-shopping "></i></span></h5>  
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="Images/b4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title text-black">Burger 3</h3>
+                        <p class="card-text text-black-50">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                       <h5 class="text-black " >600<span class="float-end text-black"><i class="fa-solid fa-basket-shopping "></i></span></h5>  
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="Images/b5.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title text-black">Burger 4</h3>
+                        <p class="card-text text-black-50">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                       <h5 class="text-black " >700<span class="float-end text-black"><i class="fa-solid fa-basket-shopping "></i></span></h5>  
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="Images/b6.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title text-black">Burger 5</h3>
+                        <p class="card-text text-black-50">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                       <h5 class="text-black " >800<span class="float-end text-black"><i class="fa-solid fa-basket-shopping "></i></span></h5>  
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="Images/b7.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title text-black">Burger 6</h3>
+                        <p class="card-text text-black-50">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                       <h5 class="text-black " >900<span class="float-end text-black"><i class="fa-solid fa-basket-shopping "></i></span></h5>  
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="Images/b8.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title text-black">Burger 7</h3>
+                        <p class="card-text text-black-50">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                       <h5 class="text-black " >1200<span class="float-end text-black"><i class="fa-solid fa-basket-shopping "></i></span></h5>  
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- new cards  -->
+
+
+        <!-- ---About ---  -->
+        <div class="container" id="about">
+            <h1>ABOUT</h1>
+            <div class="row">
+                <div class="col-md-6 py-md-0">
+                    <div class="card">
+                        <img src="Images/about.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 py-3 py-md-0">
+                    <h2>Delicious Burger</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, facere labore. Ut sapiente nostrum magnam distinctio ea asperiores dolore quibusdam id. Saepe fugiat animi pariatur ipsam perferendis, molestiae illum quod, repellat iusto quas nisi ullam quia eos, velit possimus laborum repudiandae maxime neque beatae. Laudantium corrupti excepturi est dolorum, ipsum, incidunt harum non dolor quaerat, ex illum autem explicabo doloremque maxime! Voluptatem libero rerum provident excepturi nisi, earum consectetur atque perferendis aliquam velit omnis praesentium fugiat eveniet pariatur, esse necessitatibus aperiam aspernatur accusantium! Sunt, quisquam praesentium nam earum minus saepe harum odio quae dolores incidunt nihil perferendis, repellat, culpa iusto!</p>
+                    <div id="readmore-button"><button>Read More.......</button> </div>
+                </div>
+            </div>
+        </div>
+        <!-- ---About ---  -->
+        <!-- ---Contact us ---  -->
+        <div class="container" id="contact-container">
+            <h2 class="text-center border-top-0 border-end-0 border-start-0  ">Contact</h2>
+            <div class="containter" id="contact">
+                <div class="row">
+                    <div class="col-md-6 py-3 py-md-0 ">
+                            <h3 class="border-0 text-center">CONTACT  US</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium iusto mollitia adipisci reiciendis repellendus, minus ex reprehenderit aperiam! Minima explicabo esse nemo corrupti doloribus numquam nisi aut quaerat quasi alias?</p>
+                    <!-- <form action="https://formcarry.com/s/m0H4lHcrjh" method="POST" accept-charset="UTF-8"> -->
+                        
+                            <input type="text" id="name" name="name" class="mx-1 border-2 rounded-3" placeholder="Name" required><br>
+                            <input type="email" id="email" name="email" class="mx-1 border-2 rounded-3" placeholder="Email" required><br>
+                            <input type="tel" id="phone" name="phone" class="mx-1 border-2 rounded-3" placeholder="Phone" required><br>
+                            <textarea name="description" id="message" class="mx-1 mt-4 border-2 rounded-3"  placeholder="Content" cols="52" rows="5"></textarea><br>
+                            <button  type="submit" id="submit-button" onclick="sendMail()" class="mx-1 my-1" >Send</button>
+                    
+                    </div>
+                    <div class="col-md-6 py-3 py-md-0">
+                        <h3 class="border-0 text-center">INFO</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum perferendis aliquam sunt, assumenda quis non. Saepe accusamus similique eligendi temporibus ratione dignissimos, dolores minus iusto cupiditate esse dolore molestias unde!</p>
+                        <i class="fas fa-phone my-3"><span class="text-black-50 ms-2 ">+9859482385</span></i><br>
+                        <i class="fa-solid fa-phone my-3"><span class="text-black-50 ms-2">Burgrer@gmail.com</span></i><br>
+                        <i class="fa-solid fa-location-dot my-3"><span class="text-black-50 ms-2">Kochi Keral India</span></i><br>
+                </div>
+            </div>
+       </div>
+        <!-- ---Contact us ---  -->
+        <!-- --- Footer---  -->
+        <footer id="footer" style="margin-top: 50px;">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 footer-content">
+                            <a href="#" class="navbar-brand" id="logo2"><img src="Images/logo.png" alt="" width="30px">Burger</a><hr>
+                            <p>
+                                kochi <br>
+                                Thrissur <br>
+                                calicut <br>
+
+                            </p>
+                            <strong><i class="fa-solid fa-phone"></i>Phone: <strong>+9087563421</strong> </strong><br>
+                            <strong><i class="fa-solid fa-envelope"></i>Email: <strong>burger@gmail.com</strong> </strong><br>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Useful links</h4><hr>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Service</a></li>
+                                <li><a href="#">privacy policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Our services</h4><hr>
+                            <ul>
+                                <li><a href="#">Pizza</a></li>
+                                <li><a href="#">Fried Chicken</a></li>
+                                <li><a href="#">Burger</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4 class="">Our Social Links</h4><hr>
+                           <div class="social-links-mt-3 social_link">
+                            <a href="#" ><i class="fa-brands fa-twitter  social-size" ></i></a>
+                            <a href="#" ><i class="fa-brands fa-facebook social-size"></i></a>
+                            <a href="#" ><i class="fa-brands fa-instagram social-size"></i></a>
+                            <a href="#" ><i class="fa-brands fa-google-plus social-size"></i></a>
+                            <a href="#" ><i class="fa-brands fa-linked-in social-size"></i></a>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+     
+        <hr>
+        <div class="container py-4">
+            <div class="copyright d-flex justify-content-center">
+                &copy; Copyright <strong>Burger</strong>.All rights reserved
+            </div>
+        </div>
+    </footer>
+        <!-- --- Footer---  -->
+
+
+
+
+
+
+
+
+
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>
